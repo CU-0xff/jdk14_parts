@@ -290,7 +290,7 @@ public class FtpClient extends sun.net.ftp.FtpClient {
 
     private class MLSxParser implements FtpDirParser {
 
-        private SimpleDateFormat df = new SimpleDateFormat("yyyyMMddhhmmss");
+        private SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHHmmss"); // Changed by 0xff ("yyyyMMddhhmmss");
 
         public FtpDirEntry parseLine(String line) {
             String name = null;
